@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>The Indian Kabadiya</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/kabaad.css" rel="stylesheet">
+
+
+    <!-- Jquery & Bootstrap Core JavaScript -->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-recycle"></i>  <span class="light">Indian</span> Kabadiya
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Why Us ?</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="" data-toggle="modal" data-target="#offer">Offers*</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>-
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1>The Indian Kabadiya</h1>
+            <h3><i>Register your request &amp; help us clean the city !</i></h3>
+            <h3>Helpline: <mark>+91-7417013141</mark></h3>
+            <br>
+            <button class="btn btn-dark btn-lg" data-toggle="modal" data-target="#ratelist">View Rate List</button>
+            <button class="btn btn-danger btn-lg" data-toggle="modal" data-target="#register">BECH DE !</button>
+
+        </div>
+    </header>
+
+    <!-- Modals -->
+
+    <!-- Ratelist modal-->
+    <div class="modal fade" id="ratelist">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title">Rate List</h3><h5>Get the best prices at your doorsteps</h5>
+                </div>
+
+                <div class="modal-body">
+            <table class="table table-striped" id="tblGrid">
+            <thead id="tblHead">
+              <tr>
+                <th>Material</th>
+                <th>Price per</th>
+                <th class="text-right">Rate</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Newspaper</td>
+                <td>kg</td>
+                <td class="text-right">Rs.8</td>
+              </tr>
+                <tr>
+                <td>Books &amp; Magazines</td>
+                <td>kg</td>
+                <td class="text-right">Rs.7</td>
+              </tr>
+              <tr>
+                <td>Plastic</td>
+                <td>kg</td>
+                <td class="text-right">Rs.10</td>
+              </tr>
+              <tr>
+                <td>Aluminium</td>
+                <td>kg</td>
+                <td class="text-right">Rs.70</td>
+              </tr>
+              <tr>
+                <td>Iron</td>
+                <td>kg</td>
+                <td class="text-right">Rs.10</td>
+              </tr>
+              <tr>
+                <td>Tins</td>
+                <td>kg</td>
+                <td class="text-right">Rs.12</td>
+              </tr>
+              <tr>
+                <td>Steel</td>
+                <td>kg</td>
+                <td class="text-right">Rs.17</td>
+              </tr>
+              <tr>
+                <td>Brass(taamba)</td>
+                <td>kg</td>
+                <td class="text-right">Rs.200</td>
+              </tr>
+              <tr>
+                <td>Copper</td>
+                <td>kg</td>
+                <td class="text-right">Rs.250</td>
+              </tr>              
+              <tr>
+                <td>Plastic Jar</td>
+                <td>15 litre</td>
+                <td class="text-right">Rs.15</td>
+              </tr>
+              <tr>
+                <td>Carton</td>
+                <td>kg</td>
+                <td class="text-right">Rs.8</td>
+              </tr>
+            </tbody>
+          </table>
+                    </form>
+                </div>         
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>                    
+                </div>                   
+            </div>
+        </div>
+    </div> 
+
+    <!-- Registration modal-->
+  <div class="modal fade" id="register" role="dialog">
+    <div class="modal-dialog">
+          <div class="modal-content">
+        <div class="modal-header" style="padding:35px 50px;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3><span class="glyphicon glyphicon-lock"></span> Register</h3>
+          <h5>Just enter the following details and find us at your doorsteps !</h5>
+        </div>
+        <div class="modal-body" style="padding:40px 50px;">
+          <form role="form">
+            <div class="form-group">
+              <label for="name"><span class="glyphicon glyphicon-user"></span> Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+              <label for="address"><span class="glyphicon glyphicon-home"></span> Address</label>
+              <input type="text" class="form-control" id="address" placeholder="Enter address">
+            </div>
+            <div class="form-group">
+              <label for="mobile"><span class="glyphicon glyphicon-phone"></span> Contact No.</label>
+              <input type="text" class="form-control" id="mobile" placeholder="mobile number">
+            </div>
+            <div class="form-group">
+              <label for="material"><span class="glyphicon glyphicon-list-alt"></span> Material</label>
+
+                                        <div class="select-wrapper">
+                                            <select name="category" id="category">
+                                                <option value="">- Category -</option>
+                                                <option value="1">Newspaper</option>
+                                                <option value="1">Iron</option>
+                                                <option value="1">Books &amp; Magazines</option>
+                                                <option value="1">Steel</option>
+                                                <option value="1">Plastics</option>
+                                                <option value="1">Aluminium</option>
+                                                <option value="1">Tins</option>
+                                                <option value="1">Brass</option>
+                                                <option value="1">Copper</option>
+                                                <option value="1">Plastic Jars</option>
+                                                <option value="1">Cartons</option>
+                                                <option value="1">Others</option>
+                                            </select>
+                                        </div>
+            <input type="text" class="form-control" id="quantity" placeholder="Enter the quantity of Material e.g. 10 kg">
+
+
+            </div>            
+              <button type="button" class="btn btn-success btn-block" data-dismiss="modal" data-toggle="modal" data-target="#thanks"><span class="glyphicon glyphicon-off"></span> Register</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+</div>
+ 
+
+    <!-- Thanks modal-->
+    
+    <div class="modal fade" id="thanks">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title"><span class="glyphicon glyphicon-ok-sign"></span>  Thank You !</h3><h5>Your request has been successfully submitted &amp; you will soon recieve a call for confirmation</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- offer modal-->
+
+<!-- Modal -->
+  <div class="modal fade" id="offer" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h3><span class="glyphicon glyphicon-shopping-cart"></span> Today's Offer</h3>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+            <div class="form-group">
+              <label for="psw">-Avail the offers using the *Promo Code*</label><br>
+              <label for="psw">-Tell the *Promo Code* to receiptor</label>
+            </div>
+            <div id="code">
+              <p>Your Promo Code is <label><mark>round_OFF</mark></label></p>
+            </div>
+              <button type="button" id ="offer" class="btn btn-block">Get Code 
+                <span class="glyphicon glyphicon-ok"></span>
+              </button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <label for="psw">Terms &amp; Conditions apply !</label><br>
+          <label for="psw">*Offers are valid on daily basis</label>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>"The Indian Kabadiya" is an online project to support</h2>
+                    <p class="lead"><small>SWACCHA BHARAT ABHIYAN</small>, an initiative by <a target="_blank" href="http://join.deathtothestockphoto.com/">Indian Govt.</a></p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+
+    <!-- Vision -->-
+    <section id="services" class="services">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>Why Us ?</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x fa fa-calendar-o">
+                            </span>
+                                <h4>
+                                     Pick up as per your convenient Date and Time
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x fa fa-check-square-o">
+                            </span>
+                                <h4>
+                                    Assurance of accurate weight by Digital Scale
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x fa fa-rupee">
+                            </span>
+                                <h4>
+                                    Get Hard-Cash for waste at your doorsteps 
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+         <!-- Carousel -->
+
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+ 
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"This company is the best."<br><span style="font-style:normal;"> Gives best Price for your waste paper.</span></h4>
+      </div>
+      <div class="item">
+        <h4>"Efficient &amp; Polite Ground force"<br><span style="font-style:normal;">Additional Loyalty Benefits for committed customers.</span></h4>
+      </div>
+      <div class="item">
+        <h4>"TeleCaller Network."<br><span style="font-style:normal;">Facility to book online at www.indiankabaadiya.com</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+        
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+   
+        <div id="contact" class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+  
+                    <h3><span class="glyphicon glyphicon-phone">
+                            </span><strong> Contact Us</strong></h3>
+                    <h4>The Indian Kabadiya</h4>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-fw"></i> (+91)7417013141</li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:kabadiya@gmail.com">kabadiya@gmail.com</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <hr>
+                    
+                    <ul class="list-inline text-right">
+                        <li><p class="copyright text-muted text-center">&copy; 2016 All rights reserved.</p>
+
+                        </li>
+                        <li><h5 class="text-muted">Follow Us</h5>
+
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-facebook fa-fw fa-2x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-linkedin fa-fw fa-2x"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        
+    </footer>
+
+</body>
+
+</html>
