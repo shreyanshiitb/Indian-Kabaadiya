@@ -1,0 +1,29 @@
+{
+  "name": "indian-kabaadiya",
+  "version": "1.0.0",
+  "description": "indian kabaadiya site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/desiredeveloper/Indian-Kabaadiya.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/desiredeveloper/Indian-Kabaadiya/issues"
+  },
+  "homepage": "https://github.com/desiredeveloper/Indian-Kabaadiya#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "mongodb": "^3.1.6"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
+}
