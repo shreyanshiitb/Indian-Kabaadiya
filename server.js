@@ -19,7 +19,6 @@ app.use("/font-awesome", express.static(__dirname + '/font-awesome'))
 app.use("/fonts", express.static(__dirname + '/fonts'))
 
 const url = `mongodb://${config.db.user}:${config.db.password}@${config.db.host}:${config.db.port}?authSource=${config.db.name}`;
-console.log(url);
 db.connect(url, function (err) {
     if (err) {
         console.log('Unable to connect to Mongo.'+ err)
