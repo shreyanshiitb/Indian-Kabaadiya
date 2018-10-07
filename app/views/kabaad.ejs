@@ -19,7 +19,6 @@
 
 
     <!-- Jquery & Bootstrap Core JavaScript -->
-
     <script src="/js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>
@@ -143,48 +142,48 @@
                     <h5>Just enter the following details and find us at your doorsteps !</h5>
                 </div>
                 <div class="modal-body" style="padding:40px 50px;">
-                    <form role="form">
+                    <form action="/save-order" method="POST" onsubmit="$('#register').modal('hide');$('#thanks').modal('show');">
                         <div class="form-group">
                             <label for="name">
                                 <span class="glyphicon glyphicon-user"></span> Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name">
                         </div>
                         <div class="form-group">
                             <label for="address">
                                 <span class="glyphicon glyphicon-home"></span> Address</label>
-                            <input type="text" class="form-control" id="address" placeholder="Enter address">
+                            <input type="text" class="form-control" id="address" placeholder="Enter address" name="address">
                         </div>
                         <div class="form-group">
                             <label for="mobile">
                                 <span class="glyphicon glyphicon-phone"></span> Contact No.</label>
-                            <input type="text" class="form-control" id="mobile" placeholder="mobile number">
+                            <input type="text" class="form-control" id="mobile" placeholder="mobile number" name="mobile_no">
                         </div>
                         <div class="form-group">
                             <label for="material">
                                 <span class="glyphicon glyphicon-list-alt"></span> Material</label>
 
                             <div class="select-wrapper">
-                                <select name="category" id="category">
+                                <select name="category" id="category" class="form-control">
                                     <option value="">- Category -</option>
-                                    <option value="1">Newspaper</option>
-                                    <option value="1">Iron</option>
-                                    <option value="1">Books &amp; Magazines</option>
-                                    <option value="1">Steel</option>
-                                    <option value="1">Plastics</option>
-                                    <option value="1">Aluminium</option>
-                                    <option value="1">Tins</option>
-                                    <option value="1">Brass</option>
-                                    <option value="1">Copper</option>
-                                    <option value="1">Plastic Jars</option>
-                                    <option value="1">Cartons</option>
-                                    <option value="1">Others</option>
+                                    <option value="Newspaper">Newspaper</option>
+                                    <option value="Iron">Iron</option>
+                                    <option value="Books">Books &amp; Magazines</option>
+                                    <option value="Steel">Steel</option>
+                                    <option value="Plastics">Plastics</option>
+                                    <option value="Aluminium">Aluminium</option>
+                                    <option value="Tins">Tins</option>
+                                    <option value="Brass">Brass</option>
+                                    <option value="Copper">Copper</option>
+                                    <option value="Plastic Jars">Plastic Jars</option>
+                                    <option value="Cartons">Cartons</option>
+                                    <option value="Others">Others</option>
                                 </select>
                             </div>
-                            <input type="text" class="form-control" id="quantity" placeholder="Enter the quantity of Material e.g. 10 kg">
+                            <input type="text" class="form-control" id="quantity" placeholder="Enter the quantity of Material e.g. 10 kg" name="quantity">
 
 
                         </div>
-                        <button type="button" class="btn btn-success btn-block" data-dismiss="modal" data-toggle="modal" data-target="#thanks">
+                        <button type="submit" class="btn btn-success btn-block">
                             <span class="glyphicon glyphicon-off"></span> Register</button>
                     </form>
                 </div>
@@ -268,7 +267,7 @@
                     <h2>"The Indian Kabadiya" is an online project to support</h2>
                     <p class="lead">
                         <small>SWACCHA BHARAT ABHIYAN</small>, an initiative by
-                        <a target="_blank" href="http://join.deathtothestockphoto.com/">Indian Govt.</a>
+                        <a target="_blank" href="http://swachhbharatmission.gov.in">Indian Govt.</a>
                     </p>
                 </div>
             </div>

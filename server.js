@@ -4,6 +4,7 @@ const router = express.Router()
 const app = express()
 const bodyParser = require('body-parser')
 const db = require('./app/db')
+const Orders = require('./app/models/orders')
 const Phrases = require('./app/models/phrases')
 const Rates = require('./app/models/rates')
 const config = require('./config')
@@ -17,9 +18,11 @@ app.use("/img", express.static(__dirname + '/img'))
 app.use("/font-awesome", express.static(__dirname + '/font-awesome'))
 app.use("/fonts", express.static(__dirname + '/fonts'))
 
-db.connect('mongodb://'+config.db.user+':'+config.db.password+'@'+config.db.host+':'+config.db.port, function (err) {
+const url = `mongodb://${config.db.user}:${config.db.password}@${config.db.host}:${config.db.port}?authSource=${config.db.name}`;
+console.log(url);
+db.connect(url, function (err) {
     if (err) {
-        console.log('Unable to connect to Mongo.')
+        console.log('Unable to connect to Mongo.'+ err)
         process.exit(1)
     } else {
         app.listen(config.app.port, function () {
@@ -41,6 +44,11 @@ db.connect('mongodb://'+config.db.user+':'+config.db.password+'@'+config.db.host
         app.get('/create-rate', function (req, res) {
             res.render('create-rate')
         })
+        app.get('/show-orders', function (req, res) {
+            Orders.all(function (err, docs) {
+                res.send({ORDERS : docs})
+            })
+        })
         app.post('/save-phrase', (req, res) => {
             Phrases.save(req.body)
             res.redirect('/create-phrase')
@@ -48,6 +56,10 @@ db.connect('mongodb://'+config.db.user+':'+config.db.password+'@'+config.db.host
         app.post('/save-rate', (req, res) => {
             Rates.save(req.body)
             res.redirect('/create-rate')
+        })
+        app.post('/save-order', (req, res) => {
+            Orders.save(req.body)
+            setTimeout(()=>res.redirect('/'),2000)
         })
     }
 })
